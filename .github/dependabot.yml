@@ -21,5 +21,19 @@ updates:
     directory: "java/images" # Location of package manifests
     schedule:
       interval: "daily"
+  - package-ecosystem: "docker"
+    directory: "java/images"
+    schedule:
+      interval: "daily"
+    registries:
+      - gallery.ecr.aws
+
+registries:
+  gallery.ecr.aws:
+    type: "docker-registry"
+    url: "https://gallery.ecr.aws"
+    username: "${{ secrets.ECR_USERNAME }}"
+    password: "${{ secrets.ECR_PASSWORD }}"
+  
 
 
