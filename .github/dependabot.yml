@@ -6,20 +6,21 @@
 version: 2
 updates:
   - package-ecosystem: "docker" # See documentation for possible values
-    directory: "^[A-Za-z]+$/^[A-Za-z]+$" # Location of package manifests
+    directory: "dotnet/images" # Location of package manifests
     schedule:
       interval: "daily"
-  # - package-ecosystem: "docker" # See documentation for possible values
-  #   directory: "go/images" # Location of package manifests
-  #   schedule:
-  #     interval: "daily"
-  # - package-ecosystem: "docker" # See documentation for possible values
-  #   directory: "python/images" # Location of package manifests
-  #   schedule:
-  #     interval: "daily"
-  # - package-ecosystem: "docker" # See documentation for possible values
-  #   directory: "java/images" # Location of package manifests
-  #   schedule:
-  #     interval: "daily"
+  - package-ecosystem: "docker" # See documentation for possible values
+    directory: "go/images" # Location of package manifests
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "docker" # See documentation for possible values
+    directory: "python/images" # Location of package manifests
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "docker" # See documentation for possible values
+    directory: "java/images" # Location of package manifests
+    schedule:
+      interval: "daily"
+  
 
 
