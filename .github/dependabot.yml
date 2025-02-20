@@ -21,6 +21,10 @@ updates:
     directory: "java/images" # Location of package manifests
     schedule:
       interval: "daily"
+  - package-ecosystem: "docker" # See documentation for possible values
+    directory: "misc/" # Location of package manifests
+    schedule:
+      interval: "daily"
   
 
 
