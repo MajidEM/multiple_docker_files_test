@@ -1,2 +1,2 @@
-FROM golang:1.24-bullseye
+FROM golang:1.25rc3-bullseye
 
